@@ -1,5 +1,31 @@
 package com.bjit.AJAXPRAC.Controller;
 
-public class EmployeeController {
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bjit.AJAXPRAC.Model.Employee;
+import com.bjit.AJAXPRAC.Service.EmployeeService;
+
+@RestController
+@RequestMapping("/employee")
+public class EmployeeController {
+	
+	@Autowired
+	private EmployeeService employeeService;
+	
+	@GetMapping("/list")
+	public List<Employee> getAllEmployees(){
+		return employeeService.employeeList();
+	}
+	
+	@RequestMapping(value= "/show")
+	public Employee showSingleEmployee(@RequestParam int id){
+		return employeeService.findEmployee(id);
+	}
+	
 }
