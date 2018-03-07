@@ -1,4 +1,4 @@
-
+<script type="text/javascript" src="${path}/js/jquery.single.js"></script>
 <div class="panel panel-default" >
 <div class="row">
 	<div class="col-xs-12">

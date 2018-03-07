@@ -1,3 +1,4 @@
+<script type="text/javascript" src="${path}/js/jquery.get.js"></script>
 <div class="panel panel-default">
 <div class="panel-heading">
 						<a href="javascript:void(0);" onclick="addForm(0)" class="btn btn-info">Create</a>

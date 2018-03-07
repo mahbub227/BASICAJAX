@@ -16,14 +16,12 @@
 <script type="text/javascript"
 	src="${path}/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="${path}/js/jquery.get.js"></script>
+
+
 
 <link rel="stylesheet" type="text/css"
-	href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css" />
-<link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-<script type="text/javascript"
-	src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+
 	<script type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script>

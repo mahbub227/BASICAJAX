@@ -1,8 +1,5 @@
 $(function(){
-	var id;
 	tableData();
-	alert(id);
-	singleEmployee(id);
 });
 
 
@@ -23,16 +20,3 @@ function tableData(){
 	});
 }
 
-
-
-
-		
-function singleEmployee(id){
-	$.ajax({
-		type: 'GET',
-		url: '/employee/show?id=+'+id,
-		success: function(employee){
-			console.log(employee)
-		}
-	});
-}
