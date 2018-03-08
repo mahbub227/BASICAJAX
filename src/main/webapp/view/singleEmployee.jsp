@@ -1,10 +1,16 @@
 <script type="text/javascript" src="${path}/js/jquery.single.js"></script>
+
+<script>
+singleEmployee(${id});
+</script>
+
+
 <div class="panel panel-default" >
 <div class="row">
 	<div class="col-xs-12">
 		<ol class="breadcrumb">
 			<li><a href="/">Employee</a></li>
-			<li class="active">${employee.employeeName}</li>
+			<li class="active" id="employeeName"></li>
 		</ol>
 	</div>
 </div>
@@ -19,7 +25,8 @@
 				<div class="col-sm-3">
 					
 				</div>
-				<div class="col-sm-9" id="employeeName">
+				<div class="col-sm-9">
+				<h1 id="employeeNameBig"></h1>
 				</div>
 			</div>
 
@@ -37,28 +44,28 @@
 							<div class="row">
 								<label class="control-label col-md-4" for="workAddress">Work
 									Address</label>
-								<label class="control-label col-md-8" for="workAddress">${employee.workAddress}</label>
+								<label class="control-label col-md-8" for="workAddress" id="workAddress"></label>
 							</div>
 							<div class="row">
 								<label class="control-label col-md-4" for="workMobile">Work
 									Mobile</label>
-								<label class="control-label col-md-8" for="workMobile">${employee.workMobile}</label>
+								<label class="control-label col-md-8" for="workMobile" id="workMobile"></label>
 							</div>
 							<div class="row">
 								<label class="control-label col-md-4" for="workLocation">Work
 									Location</label>
-								<label class="control-label col-md-8" for="workLocation">${employee.workLocation}</label>
+								<label class="control-label col-md-8" for="workLocation" id="workLocation">${employee.workLocation}</label>
 							</div>
 							<div class="row">
 								<label class="control-label col-md-4" for="workEmail">Work
 									Email</label>
-								<label class="control-label col-md-8" for="workEmail">${employee.workEmail}</label>
+								<label class="control-label col-md-8" for="workEmail" id="workEmail"></label>
 							</div>
 
 							<div class="row">
 								<label class="control-label col-md-4" for="workPhone">Work
 									Phone</label>
-								<label class="control-label col-md-8" for="workPhone">${employee.workPhone}</label>
+								<label class="control-label col-md-8" for="workPhone" id="workPhone"></label>
 							</div>
 
 
@@ -72,23 +79,23 @@
 							<h1>Position</h1>
 							<div class="row">
 								<label class="control-label col-md-4" for="department">Department</label>
-							    <label class="control-label col-md-8" for="department">${employee.department}</label>
+							    <label class="control-label col-md-8" for="department" id="department"></label>
 							</div>
 
 							<div class="row">
 								<label class="control-label col-md-4" for="jobTitle">Job
 									Title</label>
-								 <label class="control-label col-md-8" for="jobTitle">${employee.jobTitle}</label>
+								 <label class="control-label col-md-8" for="jobTitle" id="jobTitle"></label>
 							</div>
 
 							<div class="row">
 								<label class="control-label col-md-4">Manager</label>
-								 <label class="control-label col-md-8" for="manager">${employee.manager}</label>
+								 <label class="control-label col-md-8" for="manager" id="manager"></label>
 							</div>
 
 							<div class="row">
 								<label class="control-label col-md-4">Coach</label>
-								 <label class="control-label col-md-8" for="coach">${employee.coach}</label>
+								 <label class="control-label col-md-8" for="coach" id="coach"></label>
 							</div>
 						</div>
 
